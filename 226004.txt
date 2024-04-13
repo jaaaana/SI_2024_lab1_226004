@@ -1,0 +1,35 @@
+1. git init
+2. git remote add origin
+3. nano README.md
+4. git add README.md
+5. git commit -m "Initial commit"
+6. $ git add SILab1_2.java SILab1_1.java SILab1Main.java
+7. git commit -m "Add starter code"
+8. git pull
+9. git push origin master
+10. git checkout -b bug1
+11. git add SILab1_1.java
+12. git commit -m "Fix wrong condition in filterOddLengthStrings"
+13. git checkout -b bug2
+14. git add SILab1_2.java
+15. git commit -m "Fix wrong condition in makeBigStringFrom"
+16. git checkout bug1
+17. git add SILab1Main.java
+18. git commit -m "Call method filterOddLengthStrings in main class"
+19. git checkout bug2
+20. git add SILab1Main.java
+21. git commit -m "Call method makeBigStringFrom in main class"
+22. git pull
+23. git push origin bug1 bug2
+24. git merge bug1
+25. git pull
+26. git push origin master
+27. git checkout bug2
+28. git rebase master
+29. poprvanaje greshki
+30. git add SILab1Main.java
+31. git rebase --continue
+32. git checkout master
+33. git merge bug2
+34. git push origin master
+35. git push -f origin bug2
